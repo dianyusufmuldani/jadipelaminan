@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 }
+
+.border_image{
+  width:200;
+  height:200;
+  background-color:'white'
+}

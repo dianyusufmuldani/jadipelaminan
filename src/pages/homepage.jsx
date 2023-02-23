@@ -4,11 +4,16 @@ import CardVideo from "@/component/cardVideo";
 import FooterApp from "@/component/footer";
 import Introduction from "@/component/introduction";
 import NavbarApp from "@/component/navbar";
+import Aos from "aos";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import "aos/dist/aos.css";
 
 const Homepage = () => {
   const [order, setOrder] = useState(null);
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
       <NavbarApp />
@@ -36,6 +41,8 @@ const Homepage = () => {
       <div
         id="about"
         className="grid grid-cols-1 md:grid-cols-2 gap-10 md:h-[100vh] h-[120vh] items-center px-[20px] bg-green-50 md:py-0 py-5"
+        data-aos="fade-right"
+        data-aos-duration={1000}
       >
         <div>
           <Image
@@ -65,6 +72,8 @@ const Homepage = () => {
       <div
         id="tutorial"
         className="grid grid-cols-1 md:grid-cols-2 gap-10 h-[100vh] items-center px-[20px]"
+        data-aos="fade-right"
+        data-aos-duration={1000}
       >
         <div>
           <h2 className="font-bold text-black text-4xl text-center">
@@ -103,6 +112,8 @@ const Homepage = () => {
       <div
         className="md:h-[100vh] h-[100%] md:mt-0 mt-[50px]  bg-green-50 p-5 "
         id="fitur"
+        data-aos="fade-right"
+        data-aos-duration={1000}
       >
         <h2 className="font-bold text-black text-4xl text-center mb-[20px] ">
           TERSEDIA FITUR YANG LENGKAP DAN KEREN
@@ -166,13 +177,15 @@ const Homepage = () => {
       <div
         className="md:h-[100vh] h-[100%] md:mt-0 mt-[50px]  p-5 items-center flex flex-col"
         id="design"
+        data-aos="fade-right"
+        data-aos-duration={1000}
       >
         <h2 className="font-bold text-black text-4xl text-center mb-[20px] ">
           DESAIN YANG TERSEDIA
         </h2>
         <br />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-5  items-center text-center ">
-          <CardThema src="/img1.png" />
+          <CardThema src="/pink1.png" linkdemo={"/demo/pink1"} />
           <CardThema src="/img2.png" />
           <CardThema src="/img3.png" />
           <CardThema src="/img2.png" />
@@ -191,6 +204,8 @@ const Homepage = () => {
       <div
         className="md:h-auto h-[100%] md:mt-[50px] mt-[50px]  p-5 items-center flex flex-col"
         id="video"
+        data-aos="fade-right"
+        data-aos-duration={1000}
       >
         <h2 className="font-bold text-black text-4xl text-center mb-[20px] ">
           UNDANGAN VIDEO

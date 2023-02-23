@@ -2,6 +2,7 @@ import Image from "next/image";
 // import Link from "next/link";
 import { useState } from "react";
 import { Link } from "react-scroll";
+import LinkNext from "next/link";
 
 function NavbarApp({ hideMenu }) {
   const [navbar, setNavbar] = useState(false);
@@ -28,14 +29,14 @@ function NavbarApp({ hideMenu }) {
                 </>
               ) : null}
               {hideMenu !== true ? null : (
-                <a href="/">
+                <LinkNext href="/">
                   <button>
                     {" "}
                     <h2 className="text-2xl text-green-600 font-bold ">
                       JADI PELAMINAN
                     </h2>
                   </button>
-                </a>
+                </LinkNext>
               )}
               <div className="md:hidden">
                 {/* <button
@@ -123,12 +124,12 @@ function NavbarApp({ hideMenu }) {
                     </>
                   ) : null}
                   {hideMenu !== true ? null : (
-                    <a
+                    <LinkNext
                       href="/template"
                       className="text-xl py-2 px-6 text-center md:hover:bg-green-300 rounded-2xl cursor-pointer"
                     >
                       <button>Desain</button>
-                    </a>
+                    </LinkNext>
                   )}
                 </li>
 
@@ -149,24 +150,24 @@ function NavbarApp({ hideMenu }) {
                     </>
                   ) : null}
                   {hideMenu !== true ? null : (
-                    <a
+                    <LinkNext
                       href="/video"
                       className="text-xl py-2 px-6 text-center md:hover:bg-green-300 rounded-2xl cursor-pointer"
                     >
                       <button>Undangan Video</button>
-                    </a>
+                    </LinkNext>
                   )}
                 </li>
-                <a href="/login">
+                <LinkNext href="/login">
                   <button className="mx-1 bg-green-500 text-white text-xl py-2 px-6 text-center md:hover:bg-green-300 rounded-2xl cursor-pointer">
                     Login
                   </button>
-                </a>
-                <a href="/register">
+                </LinkNext>
+                <LinkNext href="/register">
                   <button className="mx-1 bg-green-500 text-white text-xl py-2 px-6 text-center md:hover:bg-green-300 rounded-2xl cursor-pointer">
                     Register
                   </button>
-                </a>
+                </LinkNext>
               </ul>
             </div>
           </div>

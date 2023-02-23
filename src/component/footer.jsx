@@ -9,29 +9,54 @@ const FooterApp = () => {
           <h4 className="text-xl font-bold">Metode Pembayaran</h4>
           <br />
           <div className="grid grid-cols-4 flex gap-3 pr-10 justify-center items-center">
-            <Image src="/icon/bca.png" height={100} width={100} />
-            <Image src="/icon/dana.jpeg" height={70} width={100} />
-            <Image src="/icon/shopeepay.png" height={70} width={100} />
-            <Image src="/icon/gopay.png" height={50} width={70} />
-            <Image src="/icon/ovo.png" height={70} width={50} />
-            <Image src="/icon/linkaja.webp" height={70} width={50} />
+            <Image src="/icon/bca.png" height={100} width={100} alt="BCA" />
+            <Image src="/icon/dana.jpeg" height={70} width={100} alt="DANA" />
+            <Image
+              src="/icon/shopeepay.png"
+              height={70}
+              width={100}
+              alt="Shopeepay"
+            />
+            <Image src="/icon/gopay.png" height={50} width={70} alt="Gopay" />
+            <Image src="/icon/ovo.png" height={70} width={50} alt="Ovo" />
+            <Image
+              src="/icon/linkaja.webp"
+              height={70}
+              width={50}
+              alt="Link Aja"
+            />
           </div>
         </div>
         <div>
           <h4 className="text-xl font-bold mb-5">Lebih dekat tentang kami</h4>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-2">
             <div className="flex gap-5">
-              <Image src={"/icon/wa.png"} height={30} width={30} />
+              <Image
+                src={"/icon/wa.png"}
+                height={30}
+                width={30}
+                alt="Whatsapp"
+              />
               <h1>08990728387</h1>
             </div>
             <div className="flex gap-5">
-              <Image src={"/icon/email.png"} height={30} width={45} />
+              <Image
+                src={"/icon/email.png"}
+                height={30}
+                width={45}
+                alt="Email"
+              />
               <h1>jadipelaminan@gmail.com</h1>
             </div>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-2 mt-10">
             <div className="flex gap-5">
-              <Image src={"/icon/instagram.png"} height={30} width={30} />
+              <Image
+                src={"/icon/instagram.png"}
+                height={30}
+                width={30}
+                alt="Instagram"
+              />
               <h1>@jadipelaminan</h1>
             </div>
             <div className="flex gap-5">

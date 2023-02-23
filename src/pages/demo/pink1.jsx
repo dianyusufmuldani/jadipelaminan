@@ -75,6 +75,7 @@ const DemoPink1 = () => {
           src={"/image_cover/pink1.png"}
           width={400}
           height={400}
+          alt="Cover"
           className="md:w-[400px] md:h-[400px] w-[200px] h-[200px]"
         />
         <h2 className="font-bold font-serif text-xl">Dinda & Rian</h2>
@@ -118,6 +119,7 @@ const DemoPink1 = () => {
               width={200}
               height={200}
               className="aspect-square"
+              alt="Profile 1"
             />
           </div>
           <h1>Dinda</h1>
@@ -131,6 +133,7 @@ const DemoPink1 = () => {
               width={200}
               height={200}
               className="aspect-square"
+              alt="Profile 2"
             />
           </div>
           <h1>Rian</h1>

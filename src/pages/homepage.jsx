@@ -27,6 +27,7 @@ const Homepage = () => {
               height={200}
               width={600}
               className="rounded-bl-[100px] rounded-tr-[100px] rounded-[10px]"
+              alt="Image 1"
             />
           </div>
         </div>
@@ -42,6 +43,7 @@ const Homepage = () => {
             width={600}
             height={200}
             className="rounded-[40px]"
+            alt="Image 2"
           />
         </div>
         <div>
@@ -87,11 +89,12 @@ const Homepage = () => {
           </ol>
         </div>
         <div className="justify-center flex flex-cols ">
-          <img
+          <Image
             src="/img3.png"
             height={500}
             width={500}
             className="rounded-2xl"
+            alt="Image 3"
           />
         </div>
       </div>
